@@ -20,8 +20,8 @@ Feel free to edit the "main" funciton "main.c" in /pico_f2_keeb to your requirem
 
 ## MATERIALS
 1) Raspbery Pi Pico
-2) USB-A to USB micro adapter or cable (male to male, AKA hole to hole NOT pole to pole)
-3) OPTIONAL: A keyboard switch, some wire, soldering iron and solder (if you want to add the optional keyboard switch to active it. Just plugging it in when you hit power on your computer works just fine)
+2) USB-A to Micro-USB adapter or cable -- (male to male, AKA hole to hole NOT pole to pole)
+3) OPTIONAL: A keyboard switch, some wire, soldering iron and solder (IF you want to add the optional keyboard switch to active it. Just plugging it in when you hit power on your computer works just fine)
 
 ## DEPENDENCIES
 ```
