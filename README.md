@@ -49,7 +49,7 @@ cmake ..
 make -j4
 ```
 2) Hold the "bootsel" button down on your pico as you plug it into your computer. It should pop up as a new drive.
-3) Drag and drop "pico_f2_keyboard.uf2" onto your newly present pico.
+3) Drag and drop "pico_f2_keyboard.uf2" onto your pico.
 
 ### 3D MODEL MADE IN OPENSCAD
 
