@@ -1,3 +1,5 @@
+#PICO-AN-OS
+
 Hello hello,
 
 This is a very silly way to make a rasberry pi pico into a macro to boot into your alternate OS.
@@ -14,13 +16,13 @@ Viola. Instead of booting into my beloved, Linux, we are trapped in a room witho
 
 Feel free to edit the "main" funciton "main.c" in /pico_f2_keeb to your requirements.
 
-Dependencies:
+### Dependencies:
 ```
 sudo apt update
 sudo apt install -y git cmake build-essential gcc-arm-none-eabi libnewlib-arm-none-eabi
 ```
 
-Materials:
+### Materials:
 1) Raspbery Pi Pico
 2) Usb-A to Usb micro adapter or cable (male to male)
 3) OPTIONAL: A keyboard switch, some wire, soldering iron and solder (if you want to add the optional keyboard switch to active it. Just plugging it in when you hit power on your computer works just fine)
@@ -38,6 +40,8 @@ make -j4
 ```
 5) Hold the "bootsel" button down on your pico as you plug it into your computer. It should pop up as a new drive.
 6) Drag and drop "pico_f2_keyboard.uf2" onto your newly present pico.
+
+### 3D MODEL MADE IN OPENSCAD
 
 There's an STL file for holding together the usb-a to micro-usb adapter (that I have bent at a right angle), the pic and a keyboard switch. It's a fun little dongle to dangle out the front of your computer!
 
