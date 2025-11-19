@@ -2,7 +2,7 @@
 
 Hello hello,
 
-This is a very silly way to make a rasberry pi pico into a Keyboard Macro to boot into your side OS.
+This is a very silly way to make a Rasperry Pi Pico into a Keyboard Macro to boot into your side OS.
 
 ![Outie](img/outie.jpg)
 
@@ -48,14 +48,14 @@ mkdir build
 cmake ..
 make -j4
 ```
-2) Hold the "bootsel" button down on your pico as you plug it into your computer. It should pop up as a new drive.
-3) Drag and drop "pico_f2_keyboard.uf2" onto your pico.
+2) Hold the "bootsel" button down on your Pico as you plug it into your computer. It should pop up as a new drive.
+3) Drag and drop "pico_f2_keyboard.uf2" onto your Pico.
 
 ### 3D MODEL MADE IN OPENSCAD
 
 There's an STL file for holding together:
-1) the usb-a to micro-usb adapter (that I have bent at a right angle)
-2) the pico
+1) the USB-A to Micro-USB adapter (that I have bent at a right angle)
+2) the Pico
 3) a keyboard switch
 
 It's a fun little dongle to dangle out the front of your computer!
