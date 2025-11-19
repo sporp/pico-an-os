@@ -4,7 +4,7 @@ Hello hello,
 
 This is a very silly way to make a rasberry pi pico into a Keyboard Macro to boot into your side OS.
 
-![Outie](outie.jpg)
+![Outie](img/outie.jpg)
 
 ## OVERVIEW
 
@@ -60,4 +60,4 @@ There's an STL file for holding together:
 
 It's a fun little dongle to dangle out the front of your computer!
 
-![Dongle Danglin'](innie.jpg)
+![Dongle Danglin'](img/innie.jpg)
