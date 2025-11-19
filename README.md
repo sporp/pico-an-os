@@ -26,7 +26,11 @@ Materials:
 3) OPTIONAL: A keyboard switch, some wire, soldering iron and solder (if you want to add the optional keyboard switch to active it. Just plugging it in when you hit power on your computer works just fine)
 
 To Build:
-1) Make your way downtown to directory pico_f2_keeb/build , cmake and make:
+1) Make sure you have a path variable that points to the pico sdk in this repo, or your MAKE step is not going to work. If the repo was cloned to your user directory, add this to your .bashrc or .zshrc:
+```
+export PICO_SDK_PATH="~/pico-an-os/pico-sdk"
+```
+2) Make your way downtown to directory pico_f2_keeb/build , cmake and make:
 ```
 cd pico_f2_keeb/build
 cmake ..
