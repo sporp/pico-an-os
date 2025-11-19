@@ -2,7 +2,7 @@
 
 Hello hello,
 
-This is a very silly way to make a rasberry pi pico into a KEYBOARD macro to boot into your side OS.
+This is a very silly way to make a rasberry pi pico into a Keyboard Macro to boot into your side OS.
 
 ![Outie](outie.jpg)
 
@@ -18,30 +18,38 @@ Viola. Instead of booting into my beloved, Linux, we are trapped in a room witho
 
 Feel free to edit the "main" funciton "main.c" in /pico_f2_keeb to your requirements.
 
+## MATERIALS
+1) Raspbery Pi Pico
+2) Usb-A to Usb micro adapter or cable (male to male)
+3) OPTIONAL: A keyboard switch, some wire, soldering iron and solder (if you want to add the optional keyboard switch to active it. Just plugging it in when you hit power on your computer works just fine)
+
 ## DEPENDENCIES
 ```
 sudo apt update
 sudo apt install -y git cmake build-essential gcc-arm-none-eabi libnewlib-arm-none-eabi
 ```
 
-## MATERIALS
-1) Raspbery Pi Pico
-2) Usb-A to Usb micro adapter or cable (male to male)
-3) OPTIONAL: A keyboard switch, some wire, soldering iron and solder (if you want to add the optional keyboard switch to active it. Just plugging it in when you hit power on your computer works just fine)
+## INSTALLATION STEPS
+```
+git clone git@github.com:sporp/pico-an-os.git
+cd pico-an-os
+git submodule update --init --recursive
+export PICO_SDK_PATH="$(pwd)/pico-sdk"
+```
+
+If you don't want to add the PICO_SDK_PATH each time, add it to our .bashrc or .zshrc
 
 ## BUILD AND UPLOAD
-1) Make sure you have a path variable that points to the pico sdk in this repo, or your MAKE step is not going to work. If the repo was cloned to your user directory, add this to your .bashrc or .zshrc:
+1) Make your way downtown to directory pico_f2_keeb/build , cmake and make by following these steps:
 ```
-export PICO_SDK_PATH="~/pico-an-os/pico-sdk"
-```
-2) Make your way downtown to directory pico_f2_keeb/build , cmake and make:
-```
-cd pico_f2_keeb/build
+cd pico_f2_keeb
+rm -rf build
+mkdir build
 cmake ..
 make -j4
 ```
-5) Hold the "bootsel" button down on your pico as you plug it into your computer. It should pop up as a new drive.
-6) Drag and drop "pico_f2_keyboard.uf2" onto your newly present pico.
+2) Hold the "bootsel" button down on your pico as you plug it into your computer. It should pop up as a new drive.
+3) Drag and drop "pico_f2_keyboard.uf2" onto your newly present pico.
 
 ### 3D MODEL MADE IN OPENSCAD
 
