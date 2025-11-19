@@ -2,7 +2,7 @@
 
 Hello hello,
 
-This is a very silly way to make a rasberry pi pico into a macro to boot into your alternate OS.
+This is a very silly way to make a rasberry pi pico into a KEYBOARD macro to boot into your side OS.
 
 ![Outie](outie.jpg)
 
