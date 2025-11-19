@@ -6,6 +6,8 @@ This is a very silly way to make a rasberry pi pico into a macro to boot into yo
 
 ![Outie](outie.jpg)
 
+## OVERVIEW
+
 On plugging in the device, or after it has been plugged in and you press the button that shorts pins RUN and GND, it will proceed to do the following:
 1) Hammer F2 for about 30 seconds. 
 2) Hit F8
@@ -16,18 +18,18 @@ Viola. Instead of booting into my beloved, Linux, we are trapped in a room witho
 
 Feel free to edit the "main" funciton "main.c" in /pico_f2_keeb to your requirements.
 
-### Dependencies:
+## Dependencies
 ```
 sudo apt update
 sudo apt install -y git cmake build-essential gcc-arm-none-eabi libnewlib-arm-none-eabi
 ```
 
-### Materials:
+## Materials
 1) Raspbery Pi Pico
 2) Usb-A to Usb micro adapter or cable (male to male)
 3) OPTIONAL: A keyboard switch, some wire, soldering iron and solder (if you want to add the optional keyboard switch to active it. Just plugging it in when you hit power on your computer works just fine)
 
-To Build:
+## To Build
 1) Make sure you have a path variable that points to the pico sdk in this repo, or your MAKE step is not going to work. If the repo was cloned to your user directory, add this to your .bashrc or .zshrc:
 ```
 export PICO_SDK_PATH="~/pico-an-os/pico-sdk"
